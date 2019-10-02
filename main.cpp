@@ -19,4 +19,11 @@ int main(){
 	assert(q.back() == 30);
 	assert(q.length() == 2);
 
+	q.pop();
+	assert(q.front() == 30);
+	assert(q.back() == 30);
+
+	q.pop();
+	assert(q.empty());
+
 }

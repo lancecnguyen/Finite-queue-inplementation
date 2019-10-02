@@ -35,6 +35,15 @@ void fqueue::push(int data) {
 	++count;
 }
 
+void fqueue::pop() {
+	assert(!empty());
+	++ifront;
+	if (ifront == size){
+		ifront = 0;
+	}
+	--count;
+}
+
 int fqueue::front() const{
 	assert(!empty());
 	return parray[ifront];
