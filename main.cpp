@@ -8,4 +8,9 @@ int main(){
 	assert(q.empty());
 	assert(!q.full());
 	assert(q.length() == 0);
+
+	q.push(20);
+	assert(!q.empty());
+	assert(q.length() == 1);
+
 }

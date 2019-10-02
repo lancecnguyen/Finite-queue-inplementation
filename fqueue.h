@@ -13,5 +13,7 @@ public:
 	bool empty() const;
 	bool full() const;
 	int length() const;
+	void push(int);
+	
 
 };

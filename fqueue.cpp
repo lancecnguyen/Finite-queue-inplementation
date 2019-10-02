@@ -1,3 +1,5 @@
+#include <cassert>
+using namespace std;
 #include "fqueue.h"
 
 fqueue::fqueue(int s)
@@ -21,4 +23,14 @@ bool fqueue::full() const {
 
 int fqueue::length() const{
 	return count;
+}
+
+void fqueue::push(int data) {
+	assert(!full());
+	++iback;
+	if (iback == size){
+		iback = 0;
+	}
+	parray[iback] = data;
+	++count;
 }
