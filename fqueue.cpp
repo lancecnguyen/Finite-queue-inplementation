@@ -34,3 +34,13 @@ void fqueue::push(int data) {
 	parray[iback] = data;
 	++count;
 }
+
+int fqueue::front() const{
+	assert(!empty());
+	return parray[ifront];
+}
+
+int fqueue::back() const {
+	assert(!empty());
+	return parray [iback];
+}

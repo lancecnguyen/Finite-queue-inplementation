@@ -14,6 +14,7 @@ public:
 	bool full() const;
 	int length() const;
 	void push(int);
-	
+	int front() const;
+	int back() const;
 
 };

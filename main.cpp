@@ -12,5 +12,11 @@ int main(){
 	q.push(20);
 	assert(!q.empty());
 	assert(q.length() == 1);
+	assert(q.front() == 20);
+	assert(q.back() == 20);
+	q.push(30);
+	assert(q.front() == 20);
+	assert(q.back() == 30);
+	assert(q.length() == 2);
 
 }
